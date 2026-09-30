@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zinc Plating Line — Daily Temp & pH Log</title>
+<style>
+  body { font-family: Calibri, sans-serif; margin: 24px; }
+  h1 { color: #1F4E78; }
+  h2 { color: #2E75B6; border-bottom: 2px solid #2E75B6; padding-bottom: 4px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid #999; padding: 6px; text-align: left; font-size: 11px; }
+  th { background-color: #2E75B6; color: white; }
+  .critical { background-color: #FFF2CC; }
+  .header-info td { border: none; padding: 4px; }
+  .notes td { height: 80px; }
+</style>
+</head>
+<body>
+
+<h1>Zinc Plating Line — Daily Temp &amp; pH Log</h1>
+
+<table class="header-info">
+<tr>
+  <td><b>Day:</b> ___________</td>
+  <td><b>Date:</b> ___________</td>
+  <td><b>Shift:</b> ___________</td>
+  <td><b>Operator:</b> ___________</td>
+</tr>
+</table>
+
+<h2>Tank-by-Tank Log</h2>
+<table>
+<tr>
+<th>Tank #</th><th>Process</th><th>Chemistry</th><th>Target Temp (°F)</th><th>Actual Temp</th><th>Target pH</th><th>Actual pH</th><th>Target Time</th><th>Actual Time</th><th>Initials</th>
+</tr>
+<tr><td>1</td><td>Degreaser</td><td>EnviroKleen FC-500</td><td>70–180</td><td></td><td>—</td><td></td><td>As req'd</td><td></td><td></td></tr>
+<tr><td>2</td><td>Rinse #1</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>3</td><td>Electrocleaner</td><td>Brite-Kleen EC-130</td><td>160–210</td><td></td><td>—</td><td></td><td>3–10 min</td><td></td><td></td></tr>
+<tr><td>4</td><td>Rinse #2</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>5</td><td>Pickle</td><td>HCl 24% vol</td><td>Ambient</td><td></td><td>—</td><td></td><td>20 min</td><td></td><td></td></tr>
+<tr class="critical"><td>6</td><td>Rinse #3 ⚠️ CRITICAL</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>7</td><td>Zinc Plate #1</td><td>Brite-Zinc 421</td><td>65–90</td><td></td><td>—</td><td></td><td>25 min</td><td></td><td></td></tr>
+<tr><td>8</td><td>Zinc Plate #2</td><td>Brite-Zinc 421</td><td>65–90</td><td></td><td>—</td><td></td><td>25 min</td><td></td><td></td></tr>
+<tr class="critical"><td>9</td><td>Dragout Recovery</td><td>Recirculated Zinc</td><td>Ambient</td><td></td><td>—</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>10</td><td>Rinse #4 (Counterflow)</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>11</td><td>Rinse #5 (Counterflow)</td><td>Fresh Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>12</td><td>Nitric Desmut</td><td>Nitric 68% (1.9% vol)</td><td>Ambient</td><td></td><td>—</td><td></td><td>10 sec</td><td></td><td></td></tr>
+<tr><td>13</td><td>Rinse #6</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>14</td><td>Chromate (circle: Tri-Clear / Tri-Yellow / Hex-Black / Hex-Yellow)</td><td>See SDS</td><td>80–90</td><td></td><td>2.0–2.5</td><td></td><td>10–90 sec</td><td></td><td></td></tr>
+<tr><td>15</td><td>Rinse #7 (Cool)</td><td>Process Water</td><td>&lt;80</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>16</td><td>Rinse #8 (Hot)</td><td>Process Water</td><td>120–140</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>17</td><td>Seal/Topcoat</td><td>Sealer (if used)</td><td>Ambient–120</td><td></td><td>—</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>18</td><td>Rinse #9</td><td>Process Water</td><td>Ambient</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>19</td><td>Final Rinse (DI/Hot)</td><td>DI Water</td><td>140–160</td><td></td><td>Neutral</td><td></td><td>—</td><td></td><td></td></tr>
+<tr><td>Dry</td><td>Dry Station</td><td>—</td><td>&lt;150</td><td></td><td>—</td><td></td><td>—</td><td></td><td></td></tr>
+</table>
+
+<h2>Notes / Corrective Actions</h2>
+<table class="notes"><tr><td></td></tr></table>
+
+<h2>Supervisor Sign-Off</h2>
+<table class="header-info">
+<tr>
+  <td><b>Signature:</b> ___________________</td>
+  <td><b>Date:</b> ___________</td>
+</tr>
+</table>
+
+</body>
+</html>
